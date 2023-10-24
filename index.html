@@ -27,7 +27,6 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/js/popup.css" />
 	<!-- Favicon  -->
     <link rel="icon" href="https://masud.pages.dev/assets/favicon.ico">
 </head>
@@ -286,19 +285,22 @@ Malware or adware presents more severe issues. Apart from showing pop-up ads whi
     </div> <!-- end of counter -->
     <!-- end of statistics -->
 
-<div id="modalOverlay">
-		<div class="modalPopup">
-			<div class="headerBar">			</div>
-			<div class="modalContent">
-					<h1>
-		<center> <h1 style="color:red;">Caution</h1></center></h1>
-						<center> <p style="color:red;">Be careful when you uninstall the application,<br>if for some reason your precious device breaks,<br>
-	our authority is not responsible in any way,<br>so whatever you do is at your own risk.</p></center>
-					 <button class="buttonStyle" id="button">Understood</button>
-			</div>
-		</div>
-	</div>
+<script async src="https://tally.so/widgets/embed.js"></script>
 
+<script>
+window.TallyConfig = {
+  "formId": "mOXgkY",
+  "popup": {
+    "open": {
+      "trigger": "scroll",
+      "scrollPercent": 25
+    },
+    "layout": "modal",
+    "hideTitle": true
+  }
+};
+</script>
+	
    <!-- Description 1 -->
    <div id="android" class="basic-1">
     <div class="container">
@@ -562,7 +564,7 @@ Malware or adware presents more severe issues. Apart from showing pop-up ads whi
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
- <script src="/js/popup.js"></script>
+
     <script src="https://kit.fontawesome.com/a3084348ca.js" crossorigin="anonymous"></script>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
