@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="/js/popup.css" />
+
+<div id="modalOverlay">
+		<div class="modalPopup">
+			<div class="headerBar">
+				<img src="https://placehold.it/200x25/edcb04/333333/?text=LOGO" alt="Logo">
+			</div>
+			<div class="modalContent">
+					<h1>Modal window title here</h1>
+					 <p>Modal appears on page load, presents information and is dismissed after the "Close" button is clicked. Styled modal messaging, images and other information here.</p>
+					 <button class="buttonStyle" id="button">Close</button>
+			</div>
+		</div>
+	</div>
+
+
+ <script src="/js/popup.js"></script>
