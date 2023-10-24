@@ -27,6 +27,12 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	    <link rel="stylesheet" href="/js/openvideoplayerpopup.css" />
+    <link rel="stylesheet" href="/Programing/VideoPlayerCkin/dist/css/ckin.css">
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 	<!-- Favicon  -->
     <link rel="icon" href="https://masud.pages.dev/assets/favicon.ico">
 </head>
@@ -145,10 +151,17 @@
                     <div class="text-container">
                         <div class="row">
                             <div class="col-md-6">
-                                <h3>Improving Product Strategy</h3>
-                                <p>Sync also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained.</p>
-                                <p>For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page.</p>
-                                <p>The best way to promoted digital products is to provide potential users.</p>
+                                <h3>Windows</h3>
+                                <p>   <section>
+      <button class="show-modal">Show Modal</button>
+      <span class="overlay"></span>
+      <div class="modal-box">
+        <video poster="/img/Cover.jpg" src="https://bloatware.pages.dev/installadb/Ubuntu.mp4" data-color="red" data-ckin="default" data-overlay="2"></video>
+        <div class="buttons">
+          <button class="close-btn">Closed !</button>
+        </div>
+      </div>
+    </section></p>
                             </div> <!-- end of col -->
                             <div class="col-md-6">
                                 <div class="image-container-small">
@@ -304,6 +317,24 @@
 
     <script src="https://kit.fontawesome.com/a3084348ca.js" crossorigin="anonymous"></script>
     <!-- Scripts -->
+		    <script>
+      const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".show-modal"),
+        closeBtn = document.querySelector(".close-btn");
+
+      showBtn.addEventListener("click", () => section.classList.add("active"));
+
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+
+      closeBtn.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+    </script>
+
+<script src="/Programing/VideoPlayerCkin/js/ckin.js"></script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
